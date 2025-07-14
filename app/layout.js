@@ -1,15 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Mona_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const monaSans = Mona_Sans({
   subsets: ["latin"],
+  weight: ["400", "600", "800"], // choose weights you need
+  variable: "--font-mona-sans", // optional: for Tailwind
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${monaSans.variable}  antialiased`}
       >
         {children}
       </body>
