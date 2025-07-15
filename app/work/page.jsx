@@ -44,7 +44,7 @@ const projects = [
     id: 4,
     title: "Brand Logo Pack",
     category: "Graphic Design",
-    image: "/images/graphic_design.jpg",
+    image: "/images/graph.jpg",
     description:
       "Professional logo pack designed in Adobe Illustrator, tailored for modern tech startups and personal brands.",
   },
@@ -64,6 +64,15 @@ const projects = [
     description:
       "Personal portfolio built with React and Next.js showcasing interactive projects and blog integration.",
   },
+  {
+    id: 7,
+    title: "Social Media Product Post Set",
+    category: "Graphic Design",
+    image: "/images/grapdesign2.jpg",
+    description:
+      "A vibrant and engaging set of Instagram and Facebook post templates designed for a skincare brand to promote their new product launch.",
+  }
+  
 ];
 
 export default function ProjectsPage() {

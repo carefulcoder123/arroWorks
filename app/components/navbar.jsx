@@ -11,16 +11,16 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full h-20 z-50 bg-[#393738]/30 backdrop-blur-lg border-b border-neutral-700">
-      <div className="max-w-7xl mx-auto px-6 pl-2 sm:px-10 flex justify-between items-center h-full">
+      <div className="w-full px-6 pl-2 sm:px-10 flex justify-between items-center h-full">
         {/* Logo */}
         <div className="logo">
           <Link href="/">
-            <img src="/logo1.png" alt="my-logo" className="h-12 md:h-20" />
+            <img src="/logo1.png" alt="my-logo" className="h-12 md:h-24" />
           </Link>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-white font-medium">
+        <ul className="hidden md:flex gap-8 text-white text-md">
           <li><Link href="/" className="hover:underline">Home</Link></li>
           <li><Link href="/work" className="hover:underline">Work</Link></li>
           <li><Link href="/services" className="hover:underline">Services</Link></li>

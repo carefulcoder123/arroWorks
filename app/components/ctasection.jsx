@@ -1,5 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 
 export default function CtaSection() {
   return (
@@ -7,7 +9,7 @@ export default function CtaSection() {
       <div className="max-w-5xl mx-auto text-center">
         <motion.h2
           className="text-4xl md:text-5xl font-bold mb-6"
-          initial={{ opacity: 0, y: 20 }} 
+          initial={{ opacity: 0, y: 20 }}  
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
@@ -28,12 +30,13 @@ export default function CtaSection() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <a
-            href="#contact"
-            className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-xl text-lg font-medium transition duration-300 shadow-md"
-          >
-            Get in Touch
-          </a>
+          
+        <Link href="/contact">
+          <button className="mt-8  relative inline-block mx-auto px-6 py-4 text-white text-lg font-semibold border border-neutral-700 rounded-full overflow-hidden group hover:scale-105 transition duration-300 cursor-pointer">
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-700 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-[1000ms] ease-in-out"></span>
+            <span className="relative z-10">Get in Touch</span>
+          </button>
+        </Link>
         </motion.div>
       </div>
     </section>

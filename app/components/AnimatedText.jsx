@@ -2,7 +2,7 @@
   import { motion } from "framer-motion";
   import React, { useRef, useState } from "react";
 
-  export default function AnimatedText({ text, down = false }) {
+  export default function AnimatedText({ text, down = false, className = "" }) {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const containerRef = useRef(null);
 
@@ -40,7 +40,7 @@
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="flex flex-wrap font-bold text-white text-[calc(1rem+8vw)] leading-none gap-[0.02em] cursor-pointer"
+        className={`flex flex-wrap text-[#03fef8] text-[calc(1rem+8vw)] leading-none gap-[0.02em] cursor-pointer ${className}`}
       >
         {text.split("").map((char, index) => (
           <motion.span
