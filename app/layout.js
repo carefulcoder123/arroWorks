@@ -40,8 +40,8 @@ const allura = Allura({
 
 
 export const metadata = {
-  title: "My Website",
-  description: "Using Michroma font",
+  title: "ArroWorks",
+  description: "This is the website for ArroWorks.",
 };
 
 export default function RootLayout({ children }) {
